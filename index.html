@@ -3,151 +3,125 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>أخلاقيات الذكاء الاصطناعي: تقنية مسؤولة لمستقبل آمن</title>
+<title>هويتي العربية في عالم متنوع</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F4F7F8;--ink:#12233A;--card:#fff;--teal:#1B7F8E;--gold:#E8A33D;--line:#D5DEE3;--muted:#4A5B6E}
-@media (prefers-color-scheme:dark){:root{--bg:#0E1926;--ink:#EAF1F5;--card:#16283A;--line:#28405A;--muted:#A9BAC9}}
+:root{--g:#0B6E4F;--gd:#073B2B;--gold:#C9A227;--bg:#F3F7F5;--ink:#15251F;--line:#D3E0DA}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,Tahoma,Arial,sans-serif;line-height:1.7}
-.wrap{max-width:1200px;margin:auto;padding:16px}
-header{background:#12233A;color:#fff;border-radius:14px;padding:22px 26px;border-bottom:6px solid var(--gold)}
-header small{color:#BFD3E0;display:block}
-h1{margin:6px 0;font-size:clamp(24px,4vw,40px);font-weight:800}
-.q{margin-top:10px;background:var(--gold);color:#12233A;font-weight:800;padding:8px 14px;border-radius:10px;display:inline-block}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
-@media(max-width:850px){.grid{grid-template-columns:1fr}}
-section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
-h2{margin:0 0 6px;font-size:19px;color:var(--teal);border-bottom:2px solid var(--gold);display:inline-block}
-ul{margin:4px 0;padding-inline-start:20px}
-li{margin:2px 0;font-size:15px}
-p{margin:4px 0;font-size:15px}
-.wide{grid-column:1/-1}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,Tahoma,Arial,sans-serif;line-height:1.8}
+.w{max-width:1000px;margin:auto;padding:14px}
+header{background:var(--gd);color:#fff;border-radius:14px;padding:24px;text-align:center;border-bottom:6px solid var(--gold)}
+h1{margin:4px 0;font-size:clamp(26px,5vw,42px);font-weight:800}
+.names span{display:inline-block;margin:3px;padding:2px 12px;border-radius:20px;background:rgba(255,255,255,.15)}
+.names .m{background:var(--gold);color:#222;font-weight:800}
+.bar{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px 0}
+button{font-family:inherit;font-size:15px;border:0;border-radius:10px;padding:8px 16px;background:var(--g);color:#fff;cursor:pointer;font-weight:600}
+button.o{background:#fff;color:var(--g);border:2px solid var(--g)}
+h2{color:var(--g);border-bottom:3px solid var(--gold);display:inline-block;margin:18px 0 8px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:700px){.stats{grid-template-columns:1fr 1fr}}
+.st{background:#fff;border:1px solid var(--line);border-radius:12px;text-align:center;padding:10px}
+.st b{display:block;font-size:26px;color:var(--g)}
+.flow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin:8px 0;font-weight:800}
+.flow span{background:var(--g);color:#fff;padding:6px 16px;border-radius:30px}
+.flow i{font-style:normal;color:var(--gold);font-size:22px}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:4px 14px}
+summary{cursor:pointer;font-weight:800;font-size:18px;padding:8px 0;color:var(--gd)}
+summary b{display:inline-block;width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;background:var(--gold);color:#222;margin-inline-end:8px}
+.ic{font-size:44px;float:left;margin:0 10px}
+details ul{margin:4px 0 10px;padding-inline-start:22px}
+.ayah{background:#EAF4EF;border-right:4px solid var(--g);padding:6px 12px;border-radius:8px;margin:6px 0 10px;font-weight:600}
+.tip{background:#FFF6D6;border-radius:8px;padding:6px 12px;margin:6px 0 10px;font-weight:600}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-@media(max-width:600px){.two{grid-template-columns:1fr}}
-.box{border:1px solid var(--line);border-radius:10px;padding:8px 12px}
-.box b{color:var(--teal)}
-.team{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.team span{background:rgba(255,255,255,.14);padding:2px 12px;border-radius:20px;font-weight:600;font-size:15px}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-@media(max-width:850px){.steps{grid-template-columns:1fr}}
-footer{text-align:center;color:var(--muted);font-size:13px;margin-top:12px}
-.pb{position:fixed;bottom:16px;left:16px;z-index:9;background:#E8A33D;color:#12233A;border:0;border-radius:30px;padding:10px 22px;font:inherit;font-weight:800;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.3)}
-@page{size:A3 landscape;margin:8mm}
-@media print{body{background:#fff}.wrap{padding:0}.pb{display:none}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+@media(max-width:700px){.two{grid-template-columns:1fr}}
+.q button{background:#fff;color:var(--ink);border:2px solid var(--line);margin:3px;font-weight:400}
+.q button.ok{background:#CFEBDD;border-color:var(--g)}.q button.no{background:#F6D4D4;border-color:#b33}
+label.c{display:block;cursor:pointer}
+.slogan{background:var(--g);color:#fff;border-radius:14px;text-align:center;padding:16px;font-size:22px;font-weight:800;margin-top:16px}
+footer{text-align:center;font-size:13px;margin:16px 0;color:#456}
+@media print{.bar,.noprint{display:none}body{background:#fff}details,.card{break-inside:avoid}}
 </style>
 </head>
 <body>
-<div class="wrap">
-<button class="pb" onclick="window.print()">🖨️ طباعة الملصق</button>
+<div class="w">
 <header>
-<small>مدرسة النهضة الوطنية - البنين | الصف الحادي عشر | اللغة العربية | التعلّم القائم على المشاريع (PBL) | الأسبوع 5 (28 سبتمبر - 2 أكتوبر)</small>
-<h1>أخلاقيات الذكاء الاصطناعي: تقنية مسؤولة لمستقبل آمن</h1>
-<div class="q">السؤال المحوري: كيف يمكننا أن نضمن الاستخدام الأخلاقي للذكاء الاصطناعي؟</div>
-<div class="team"><span>ليث مازن</span><span>محمد الخطيب</span>
+<div>مدرسة النهضة الوطنية - البنين | الصف الحادي عشر | التربية الإسلامية | مشروع PBL</div>
+<h1>🌙 هويتي العربية في عالم متنوع</h1>
+<div class="names"><span class="m">ليث مازن</span><span class="m">محمد الخطيب</span><span>فارس ضياء</span><span>محمد عدنان</span><span>يامن محمد</span></div>
 </header>
 
-<div class="grid">
-<section>
-<h2>القضية المختارة</h2>
-<p><b>الأمانة الأكاديمية واستخدام أدوات الذكاء الاصطناعي</b> (يمكن تبديلها بالخصوصية والبيانات أو التزييف العميق أو التحيز في الخوارزميات).</p>
-<p><b>سؤال البحث الفرعي:</b> متى يصبح استخدام الطالب للذكاء الاصطناعي مساعدة مشروعة، ومتى يصبح غشًّا؟</p>
-</section>
-
-<section>
-<h2>موقف الفريق</h2>
-<p>الذكاء الاصطناعي أداة مفيدة للتعلم، لكنه يحتاج قواعد واضحة: نستخدمه للفهم والتحسين، لا لنسخ العمل. ونذكر دائمًا متى استعنّا به.</p>
-<p>الفرص: شرح أسرع، تصحيح لغوي، أفكار للبحث.<br>المخاطر: الغش، معلومات خاطئة، ضعف التفكير المستقل.</p>
-</section>
-
-<section>
-<h2>القضايا الأخلاقية الأربع</h2>
-<ul>
-<li>الخصوصية وحماية البيانات</li>
-<li>التحيز في الخوارزميات</li>
-<li>الأمانة الأكاديمية</li>
-<li>المسؤولية عن نتائج الذكاء الاصطناعي</li>
-</ul>
-</section>
-
-<section class="wide">
-<h2>تحليل نصّين حجاجيين متعارضين</h2>
-<div class="two">
-<div class="box"><b>النص الأول (مؤيد):</b> يرى أن الذكاء الاصطناعي يدعم التعلم ويوفر الوقت.
-<ul><li>دليل منطقي: إحصاءات وأمثلة عن تحسّن الفهم.</li><li>دليل عاطفي: قصص نجاح تثير الحماس.</li></ul></div>
-<div class="box"><b>النص الثاني (معارض):</b> يرى أنه يشجع الاتكال ويهدد الأمانة.
-<ul><li>دليل منطقي: حالات غش وأخطاء موثقة.</li><li>دليل عاطفي: تخويف من فقدان المهارات.</li></ul></div>
+<div class="bar">
+<button onclick="window.print()">🖨️ طباعة</button>
+<button class="o" onclick="tog(true)">فتح الكل</button>
+<button class="o" onclick="tog(false)">إغلاق الكل</button>
 </div>
-<p><b>حكمنا على الأدلة:</b> نقبل الأدلة المنطقية الموثقة بمصدر، ونعتبر الأدلة العاطفية داعمة فقط. ونتوقع التحيز عند كل طرف، مع نسبة كل فكرة إلى صاحبها.</p>
-</section>
 
-<section>
-<h2>استبيان الطلاب</h2>
-<ul>
-<li>هل تستخدم الذكاء الاصطناعي في واجباتك؟</li>
-<li>ما الغرض: بحث، تلخيص، كتابة، ترجمة؟</li>
-<li>هل تذكر أنك استعنت به؟</li>
-<li>هل تعرف قواعد المدرسة؟</li>
-</ul>
-<p>نعرض النتائج بنسب مئوية ونستخدمها دليلًا في ميثاقنا.</p>
-</section>
-
-<section>
-<h2>الميثاق المدرسي للاستخدام الأخلاقي</h2>
-<ul>
-<li>أذكر استخدامي للذكاء الاصطناعي بصدق.</li>
-<li>أتحقق من المعلومة من مصدر موثوق.</li>
-<li>لا أنسخ عملًا كاملًا وأنسبه لنفسي.</li>
-<li>لا أشارك بياناتي أو بيانات غيري.</li>
-<li>لا أنشر صورًا أو أصواتًا مزيفة.</li>
-<li>أتحمل مسؤولية ما أقدمه.</li>
-</ul>
-</section>
-
-<section>
-<h2>المنتج النهائي والعرض</h2>
-<p>ميثاق مدرسي نعرضه وندافع عنه، مع عرض شفهي إقناعي (وإمكانية مناظرة قصيرة).</p>
-<p><b>الجمهور:</b> الزملاء والمعلمون وأولياء الأمور وإدارة المدرسة، ومعلم الحاسوب والتقنية.</p>
-</section>
-
-<section>
-<h2>توزيع الأدوار</h2>
-<ul>
-<li>ليث مازن: قائد الفريق والتنسيق</li>
-<li>محمد الخطيب: تحليل النصوص الحجاجية</li>
-<li>فارس ضياء: الاستبيان والنتائج</li>
-<li>محمد عدنان: كتابة الميثاق والمصادر</li>
-<li>يامن محمد: التصميم والعرض الشفهي</li>
-</ul>
-</section>
-
-<section>
-<h2>مصادرنا الموثوقة</h2>
-<ul>
-<li>مكتب الذكاء الاصطناعي بدولة الإمارات: ai.gov.ae</li>
-<li>توصية اليونسكو بشأن أخلاقيات الذكاء الاصطناعي: unesco.org/ar</li>
-<li>كتاب اللغة العربية للصف الحادي عشر</li>
-<li>مقالات حجاجية موثوقة من المكتبة</li>
-<li>معلمو الحاسوب والتقنية</li>
-</ul>
-</section>
-
-<section class="wide">
-<h2>مراحل العمل</h2>
-<div class="steps">
-<div class="box"><b>1) الفهم والتحليل:</b> فهم السؤال، تشكيل الفريق، اختيار القضية، بطاقة التخطيط.</div>
-<div class="box"><b>2) البحث وبناء الحل:</b> قراءة النصين، جدول المقارنة، الاستبيان، مسودة الميثاق، مراجعة الأقران.</div>
-<div class="box"><b>3) الإنتاج والتقديم:</b> النسخة النهائية، العرض أمام الجمهور، الإجابة عن الأسئلة، التأمل.</div>
+<h2>اللغة العربية في أرقام</h2>
+<div class="stats">
+<div class="st"><b>+400 مليون</b>يتحدثون العربية</div>
+<div class="st"><b>+20</b>دولة لغتها الرسمية العربية</div>
+<div class="st"><b>6</b>لغات رسمية في الأمم المتحدة</div>
+<div class="st"><b>28</b>حرفًا في الأبجدية</div>
 </div>
-</section>
+<div class="flow"><span>اللغة 📖</span><i>←</i><span>الثقافة 🎭</span><i>←</i><span>الهوية 🪪</span><i>←</i><span>الانفتاح على العالم 🌍</span></div>
 
-<section class="wide">
-<h2>التأمل وأدلة التعلم</h2>
-<p>نوثّق المسودات والتعديلات ولقطات الشاشة، ونكتب تأمّلًا ذاتيًا وتأمّل أقران وتأمّلًا ختاميًا: ماذا تعلمنا؟ وما الذي نحسّنه؟</p>
-<p><b>معايير التقييم:</b> تحقيق مخرجات التعلم، البحث والمحتوى، التفكير الناقد، التعاون، التواصل.</p>
-</section>
+<h2>العناصر العشرة</h2>
+<div id="els"></div>
+
+<h2>توزيع أجزاء العرض</h2>
+<div class="card" id="roles"></div>
+
+<h2>تعهّد الطالب</h2>
+<div class="card" id="pl">
+<label class="c"><input type="checkbox"> أتحدث بالفصحى في الحصص.</label>
+<label class="c"><input type="checkbox"> أقرأ كتابًا عربيًا كل أسبوع.</label>
+<label class="c"><input type="checkbox"> أكتب بالعربية دون «أرابيزي».</label>
+<label class="c"><input type="checkbox"> أعلّم زميلًا كلمة أو قاعدة جديدة.</label>
+<label class="c"><input type="checkbox"> أحترم كل ثقافة وكل لغة.</label>
+<b id="pc">التزمت بـ 0 من 5</b>
 </div>
-<footer>مشروع PBL - اللغة العربية - الصف الحادي عشر - 2026-2027</footer>
+
+<h2 class="noprint">اختبر معلوماتك</h2>
+<div class="card q noprint"><div id="qz"></div><b id="sc"></b></div>
+
+<h2>المصادر</h2>
+<div class="card"><ul>
+<li>كتاب التربية الإسلامية واللغة العربية للصف الحادي عشر</li>
+<li>القرآن الكريم (سور: يوسف، البقرة، الروم، الحجرات)</li>
+<li>الأمم المتحدة: un.org/ar (اليوم العالمي للغة العربية)</li>
+<li>البوابة الرسمية لحكومة دولة الإمارات: u.ae</li>
+<li>اليونسكو: unesco.org/ar</li>
+<li>تحدي القراءة العربي: arabreadingchallenge.com</li>
+</ul></div>
+
+<div class="slogan">«نعتز بلغتنا، ونحترم العالم»</div>
+<footer>عرض الفريق أمام المعلم والزملاء | 2026-2027</footer>
 </div>
+
+<script>
+const E=[
+["📖","أهمية اللغة العربية ومكانتها",["لغة القرآن الكريم، وبها نؤدي عباداتنا.","لغة رسمية في أكثر من 20 دولة، ويتحدث بها أكثر من 400 مليون.","واحدة من ست لغات رسمية في الأمم المتحدة، ولها يوم عالمي في 18 ديسمبر.","وعاء تاريخنا وعلومنا وأدبنا وشعرنا."]],
+["🔗","العلاقة بين اللغة والثقافة",["اللغة تحمل الشعر والأمثال والحكايات والقيم.","بالعربية نفهم تراثنا ونقرأ كتب أجدادنا.","إذا ضعفت اللغة ضعفت الصلة بالثقافة ثم بالهوية.","الهوية تنتقل من جيل إلى جيل بالكلمة."]],
+["🕌","خصائص الثقافة العربية الإسلامية",["التوحيد والإيمان بالله.","الكرم والضيافة، وبر الوالدين، واحترام الكبير.","التكافل والتعاون والحياء والصدق.","حب العلم والتسامح.","الأثر: أسرة متماسكة، ومجتمع متراحم، وأخلاق عالية."]],
+["☪️","علاقة الإسلام بالموضوع",["الإسلام يعظّم اللغة العربية لأنها لغة الوحي.","يأمر بالمحافظة على الهوية والقيم.","يعدّ اختلاف الألسن والألوان آية من آيات الله.","يدعو إلى التعارف وحسن القول مع جميع الناس."],"<div class='ayah'>﴿إِنَّا أَنزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ﴾ (يوسف: 2)</div><div class='ayah'>﴿وَمِنْ آيَاتِهِ خَلْقُ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافُ أَلْسِنَتِكُمْ وَأَلْوَانِكُمْ﴾ (الروم: 22)</div><div class='ayah'>﴿وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا﴾ (الحجرات: 13)</div>"],
+["⚠️","التحدي الثقافي واللغوي",["التحدي الذي اخترناه: طغيان العامية واللغة الإنجليزية على العربية الفصحى.","من مظاهره: كتابة العربية بحروف لاتينية (الأرابيزي).","يظهر في وسائل التواصل والألعاب والمحادثات اليومية."]],
+["📉","أثر التحدي في الهوية",["ضعف القراءة والكتابة بالفصحى عند الشباب.","شعور بعضهم أن العربية قديمة وصعبة.","الابتعاد عن الشعر والتراث والكتب العربية.","ضعف الاعتزاز بالهوية مع الوقت."]],
+["🇦🇪","دور دولة الإمارات",["ميثاق اللغة العربية لحماية العربية وتعزيز حضورها.","تحدي القراءة العربي، أكبر مشروع عربي لتشجيع القراءة (أُطلق عام 2015).","جائزة الشيخ زايد للكتاب.","مركز أبوظبي للغة العربية.","عام القراءة 2016، وعام التسامح 2019.","اعتماد العربية في التعليم والوثائق الرسمية والإعلام."]],
+["🎓","دور الطالب",["التحدث بالفصحى داخل الصف.","القراءة اليومية ولو صفحات قليلة.","الكتابة بالعربية الصحيحة دون أرابيزي.","المشاركة في الإذاعة والمسابقات.","أن يكون قدوة لزملائه وإخوته."]],
+["💡","حل أو مبادرة عملية",["اسم المبادرة: «ركن الفصحى».","أسبوع الفصحى: يوم في الأسبوع دون عامية في الصف.","فقرة صباحية بالفصحى في الإذاعة المدرسية.","مسابقة شعر وخط عربي، ونادي قراءة.","لوحات بكلمات عربية جميلة في ممرات المدرسة.","قياس النجاح: عدد المشاركين وعدد الكتب المقروءة."]],
+["🌍","الهوية والتنوع العالمي",["نعتز بهويتنا ولا نتخلى عن لغتنا.","نتعلم لغات أخرى لنتواصل مع العالم.","نحترم الثقافات والأديان الأخرى ونتعاون معها.","المواطنة العالمية: نعرّف العالم بقيمنا ونتعلم من الآخرين."],"<div class='ayah'>﴿وَقُولُوا لِلنَّاسِ حُسْنًا﴾ (البقرة: 83)</div><div class='tip'>مثال: دولة الإمارات تضم أكثر من 200 جنسية تعيش معًا باحترام.</div>"]
+];
+els.innerHTML=E.map((e,i)=>`<details ${i<1?'open':''}><summary><b>${i+1}</b>${e[1]}</summary><span class="ic">${e[0]}</span><ul>${e[2].map(x=>'<li>'+x+'</li>').join('')}</ul>${e[3]||''}</details>`).join('');
+const N=["ليث مازن","محمد الخطيب","فارس ضياء","محمد عدنان","يامن محمد"];
+roles.innerHTML='<ul>'+N.map((n,i)=>`<li><b>${n}:</b> العنصران ${i*2+1} و${i*2+2}</li>`).join('')+'</ul>';
+function tog(o){document.querySelectorAll('details').forEach(d=>d.open=o)}
+window.onbeforeprint=()=>tog(true);
+pl.onchange=()=>pc.textContent='التزمت بـ '+pl.querySelectorAll(':checked').length+' من 5';
+const Q=[["ما اليوم العالمي للغة العربية؟",["18 ديسمبر","1 يناير","5 مايو"]],["في أي سورة آية ﴿وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا﴾؟",["الحجرات","الكهف","النمل"]],["ما معنى «الأرابيزي»؟",["كتابة العربية بحروف لاتينية","نوع من الخط العربي","لهجة قديمة"]],["أي مبادرة إماراتية تشجع القراءة؟",["تحدي القراءة العربي","سباق الهجن","مهرجان الطيران"]],["كم عدد اللغات الرسمية في الأمم المتحدة؟",["6","3","10"]],["ما اسم مبادرتنا في المدرسة؟",["ركن الفصحى","ساحة اللعب","نادي الرياضة"]]];
+let s=0,a=0;
+qz.innerHTML=Q.map((q,i)=>{const o=q[1].map((t,j)=>({t,r:j==0})).sort(()=>Math.random()-.5);return `<p><b>${i+1}) ${q[0]}</b><br>${o.map(x=>`<button onclick="ans(this,${x.r})">${x.t}</button>`).join('')}</p>`}).join('');
+function ans(b,r){const p=b.parentElement;if(p.dataset.d)return;p.dataset.d=1;b.className=r?'ok':'no';if(r)s++;a++;sc.textContent='نتيجتك: '+s+' من '+Q.length+(a==Q.length?' ✔️':'')}
+</script>
 </body>
 </html>
