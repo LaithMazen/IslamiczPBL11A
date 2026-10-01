@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>هويتي العربية في عالم متنوع</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F6F4;--ink:#10261E;--card:#fff;--g:#0E6B4F;--gold:#D9A441;--red:#B3322F;--line:#D3DED8}
+@media (prefers-color-scheme:dark){:root{--bg:#0C1A15;--ink:#E8F2EC;--card:#142A22;--line:#2A4A3D}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,Tahoma,Arial,sans-serif;line-height:1.8}
+nav{position:sticky;top:0;z-index:5;background:var(--g);padding:8px 10px;display:flex;gap:6px;overflow-x:auto;border-bottom:4px solid var(--gold)}
+nav a{color:#fff;text-decoration:none;white-space:nowrap;padding:2px 12px;border-radius:20px;background:rgba(255,255,255,.15);font-weight:600;font-size:14px}
+#pr{position:fixed;top:0;right:0;height:4px;background:var(--gold);width:0;z-index:9}
+header{background:var(--g);color:#fff;text-align:center;padding:36px 16px 40px}
+header h1{font-size:clamp(28px,6vw,48px);margin:6px 0}
+header p{margin:4px 0}
+.team span{display:inline-block;background:rgba(255,255,255,.18);border-radius:20px;padding:0 14px;margin:3px;font-weight:600}
+main{max-width:860px;margin:auto;padding:14px}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin:14px 0;opacity:0;transform:translateY(14px);transition:.5s}
+section.v{opacity:1;transform:none}
+.ic{font-size:44px;line-height:1.2}
+h2{font-size:clamp(20px,4vw,26px);margin:2px 0 6px;color:var(--g)}
+.n{display:inline-block;background:var(--gold);color:#10261E;border-radius:20px;padding:0 12px;font-weight:800;font-size:13px}
+li{margin:4px 0}
+.q{border-inline-start:5px solid var(--gold);background:rgba(217,164,65,.14);padding:8px 14px;border-radius:8px;margin:10px 0}
+.q small{display:block;opacity:.75}
+.fl{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}
+@media(max-width:560px){.fl{grid-template-columns:1fr}}
+.c{border:2px solid var(--g);border-radius:12px;padding:10px;cursor:pointer;min-height:72px;background:transparent;color:inherit;font:inherit;text-align:start}
+.c.o{background:var(--g);color:#fff}
+.b{background:var(--g);color:#fff;border:0;border-radius:10px;padding:8px 20px;font:inherit;font-weight:700;cursor:pointer}
+.opt{display:block;width:100%;margin:6px 0;padding:10px;border:2px solid var(--line);border-radius:10px;background:transparent;color:inherit;font:inherit;text-align:start;cursor:pointer}
+.ok{border-color:#1E9B5A;background:rgba(30,155,90,.18)}.no{border-color:var(--red);background:rgba(179,50,47,.15)}
+label{display:block;margin:6px 0;cursor:pointer}
+.flag{display:flex;height:34px;width:70px;border-radius:4px;overflow:hidden;margin:6px 0}
+footer{text-align:center;padding:16px;opacity:.7;font-size:13px}
+</style>
+</head>
+<body>
+<div id="pr"></div>
+<nav id="nv"></nav>
+<header>
+<div style="font-size:56px">🕌</div>
+<h1>هويتي العربية في عالم متنوع</h1>
+<p>مدرسة النهضة الوطنية - البنين | الصف الحادي عشر | التربية الإسلامية | PBL 2026-2027</p>
+<p><b>السؤال المحوري:</b> كيف نحافظ على هويتنا العربية ونحترم التنوع العالمي؟</p>
+<div class="team"><span>ليث مازن</span><span>محمد الخطيب</span><span>فارس ضياء</span><span>محمد عدنان</span><span>يامن محمد</span></div>
+<div class="q" style="max-width:640px;margin:14px auto;text-align:start;color:#10261E;background:#F6E3B8">﴿ وَمِنْ آيَاتِهِ خَلْقُ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافُ أَلْسِنَتِكُمْ وَأَلْوَانِكُمْ ﴾<small>سورة الروم: 22</small></div>
+</header>
+<main id="m"></main>
+<footer>مشروع PBL - التربية الإسلامية - الصف الحادي عشر</footer>
+<script>
+const S=[
+{n:1,i:"📖",t:"أهمية اللغة العربية ومكانتها",b:["لغة القرآن الكريم، وبها نؤدي عباداتنا ونفهم ديننا.","يتحدث بها مئات الملايين، وهي إحدى اللغات الرسمية الست في الأمم المتحدة.","لها يوم عالمي يُحتفل به في 18 ديسمبر.","هي رمز انتمائنا وجسر يربطنا بتاريخنا وحضارتنا."],q:["إِنَّا أَنزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ","سورة يوسف: 2"]},
+{n:2,i:"🔗",t:"العلاقة بين اللغة والثقافة",b:["اللغة وعاء الثقافة: فيها الأمثال والشعر والقيم والتاريخ.","بالعربية نقل العلماء المسلمون علوم الطب والفلك والرياضيات.","إذا ضعفت اللغة ضعفت الصلة بالتراث، وإذا قويت حفظت الهوية.","اللغة تحمل طريقة تفكيرنا وعاداتنا وآداب حديثنا."]},
+{n:3,i:"🌙",t:"خصائص الثقافة العربية الإسلامية",fl:[["الكرم والضيافة","قهوتنا وتمرنا وبيوتنا مفتوحة للضيف."],["القيم الأسرية","بر الوالدين وصلة الرحم وتماسك المجتمع."],["التسامح والوسطية","احترام الآخر والاعتدال في كل أمر."],["طلب العلم","أول كلمة نزلت: اقرأ."]]},
+{n:4,i:"☪️",t:"علاقة الإسلام بالهوية والثقافة واللغة",b:["الإسلام يعزز الاعتزاز بالدين واللغة والانتماء.","ويأمر بالتعارف واحترام التنوع، لا بالتعصب ولا الانغلاق.","يدعو إلى العدل وحسن المعاملة مع جميع الناس."],q:["يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا","سورة الحجرات: 13"]},
+{n:5,i:"⚠️",t:"التحدي: ضعف الفصحى أمام العولمة",b:["انتشار الإنجليزية في التعليم والإعلام والعمل.","كتابة العربية بحروف لاتينية (العربيزي) في الرسائل.","خلط الكلمات الأجنبية بالعربية في الحديث اليومي.","محتوى رقمي كثير بلغات أجنبية يجذب الشباب."]},
+{n:6,i:"🧭",t:"أثر التحدي في الهوية",b:["ضعف مهارات القراءة والكتابة بالفصحى عند بعض الطلاب.","الابتعاد عن فهم القرآن والتراث الأدبي.","الشعور بأن لغتنا أقل شأنًا من غيرها، وهذا غير صحيح.","تراجع الاعتزاز بالعادات والقيم المحلية."]},
+{n:7,i:"🇦🇪",t:"دور دولة الإمارات",flag:1,b:["اللغة العربية هي اللغة الرسمية للدولة وفق الدستور.","مبادرات للقراءة مثل تحدي القراءة العربي.","جائزة محمد بن راشد للغة العربية ومراكز مثل مركز أبوظبي للغة العربية.","مشاريع المعاجم والمجامع اللغوية، ومنها معجم الشارقة التاريخي للغة العربية.","الجمع بين التسامح والانفتاح على 200 جنسية تعيش في الإمارات."]},
+{n:8,i:"🎓",t:"دور الطالب",fl:[["أقرأ يوميًا","كتابًا أو مقالًا بالعربية الفصحى."],["أتحدث بفخر","أستخدم العربية السليمة في المدرسة."],["أنتج محتوى","أنشر فيديو أو منشورًا عربيًا نافعًا."],["أقتدي","أكون قدوة لزملائي وإخوتي الأصغر."]]},
+{n:9,i:"💡",t:"مبادرة مدرسية: «فصحاؤنا»",b:["حصة أسبوعية «ركن الفصحى» في الإذاعة المدرسية.","«يوم العربية»: يوم بلا كلمات أجنبية في الحديث.","مسابقة شهرية في الخط والإلقاء وكتابة القصة.","نادي قراءة بإشراف معلمي اللغة العربية.","الاحتفال بيوم اللغة العربية العالمي 18 ديسمبر."]},
+{n:10,i:"🌍",t:"الهوية والتنوع والمواطنة العالمية",b:["نعتز بهويتنا ولا نقلل من هوية غيرنا.","نتعلم لغات العالم لنتواصل، دون أن نترك لغتنا.","نحترم الأديان والثقافات ونتعاون على الخير المشترك.","المواطن العالمي المسؤول يعرف جذوره وينفتح على الجميع."]},
+{id:"quiz",i:"🧠",t:"اختبر معلوماتك",nm:"الاختبار",quiz:1},
+{id:"pledge",i:"✍️",t:"عهد الهوية: أتعهد أن...",nm:"العهد",pledge:1},
+{id:"src",i:"📚",t:"المصادر",nm:"المصادر",b:["القرآن الكريم: سورة الروم 22، سورة يوسف 2، سورة الحجرات 13.","كتاب التربية الإسلامية للصف الحادي عشر.","البوابة الرسمية لحكومة دولة الإمارات: u.ae","الأمم المتحدة: اليوم العالمي للغة العربية.","مركز أبوظبي للغة العربية، وجائزة محمد بن راشد للغة العربية.","الصور: رموز ورسومات مرسومة بالكود، ويمكن إضافة صور حقيقية عند العرض."]}
+];
+const Q=[["كم لغة رسمية في الأمم المتحدة؟",["4","6","8"],1],["متى اليوم العالمي للغة العربية؟",["18 ديسمبر","1 يناير","2 نوفمبر"],0],["أي سورة فيها آية التعارف بين الشعوب؟",["الحجرات","الكهف","النور"],0],["ما الحل الأنسب مع العولمة؟",["ترك العربية","التمسك بالعربية مع احترام الآخرين","تجنب كل اللغات الأخرى"],1]];
+const P=["أقرأ بالعربية الفصحى كل يوم","أكتب رسائلي بحروف عربية","أحترم كل ثقافة ودين","أشارك في مبادرة «فصحاؤنا»"];
+let sc=0,ans=0;
+const m=document.getElementById("m"),nv=document.getElementById("nv");
+S.forEach(s=>{const id=s.id||"s"+s.n;
+nv.innerHTML+=`<a href="#${id}">${s.nm||s.n}</a>`;
+let h=`<section id="${id}"><div class="ic">${s.i}</div>`;
+if(s.n)h+=`<span class="n">العنصر ${s.n} من 10</span>`;
+h+=`<h2>${s.t}</h2>`;
+if(s.flag)h+=`<div class="flag"><i style="flex:1;background:#CE1126"></i><div style="flex:3"><i style="display:block;height:34%;background:#00732F"></i><i style="display:block;height:33%;background:#fff"></i><i style="display:block;height:33%;background:#000"></i></div></div>`;
+if(s.b)h+="<ul>"+s.b.map(x=>`<li>${x}</li>`).join("")+"</ul>";
+if(s.q)h+=`<div class="q">﴿ ${s.q[0]} ﴾<small>${s.q[1]}</small></div>`;
+if(s.fl)h+=`<p>اضغط على البطاقة لتظهر التفاصيل:</p><div class="fl">`+s.fl.map(f=>`<button class="c" data-a="${f[0]}" data-b="${f[1]}">${f[0]}</button>`).join("")+"</div>";
+if(s.quiz)h+=`<div id="qz"></div>`;
+if(s.pledge)h+=P.map(x=>`<label><input type="checkbox" class="pl"> ${x}</label>`).join("")+`<p id="pm"></p>`;
+m.innerHTML+=h+"</section>"});
+document.addEventListener("click",e=>{const c=e.target.closest(".c");if(c){c.classList.toggle("o");c.textContent=c.classList.contains("o")?c.dataset.b:c.dataset.a}});
+document.addEventListener("change",e=>{if(e.target.classList.contains("pl")){const a=[...document.querySelectorAll(".pl")];document.getElementById("pm").textContent=a.every(x=>x.checked)?"🌟 شكرًا لكم، هويتنا أمانة!":""}});
+function qz(){const e=document.getElementById("qz");if(ans>=Q.length){e.innerHTML=`<h3>نتيجتك: ${sc} من ${Q.length} ${sc==Q.length?"🎉 ممتاز!":"👍 حاول مرة أخرى"}</h3><button class="b" onclick="sc=0;ans=0;qz()">إعادة</button>`;return}
+const q=Q[ans];e.innerHTML=`<p><b>${ans+1}) ${q[0]}</b></p>`+q[1].map((o,i)=>`<button class="opt" onclick="pick(this,${i})">${o}</button>`).join("")}
+function pick(b,i){const q=Q[ans];if(i==q[2]){sc++;b.classList.add("ok")}else b.classList.add("no");b.parentNode.querySelectorAll(".opt")[q[2]].classList.add("ok");setTimeout(()=>{ans++;qz()},900)}
+qz();
+const io=new IntersectionObserver(r=>r.forEach(x=>{if(x.isIntersecting)x.target.classList.add("v")}),{threshold:.08});
+document.querySelectorAll("section").forEach(s=>io.observe(s));
+addEventListener("scroll",()=>{const h=document.documentElement;document.getElementById("pr").style.width=h.scrollTop/(h.scrollHeight-h.clientHeight)*100+"%"});
+</script>
+</body>
+</html>
