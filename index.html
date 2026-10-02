@@ -48,7 +48,7 @@ footer{text-align:center;font-size:13px;margin:16px 0;color:#456}
 <header>
 <div>مدرسة النهضة الوطنية - البنين | الصف الحادي عشر | التربية الإسلامية | مشروع PBL</div>
 <h1>🌙 هويتي العربية في عالم متنوع</h1>
-<div class="names"><span class="m">ليث مازن</span><span class="m">محمد الخطيب</span><span>فارس ضياء</span><span>محمد عدنان</span><span>يامن محمد</span></div>
+<div class="names"><span class="m">ليث مازن</span><span class="m">محمد الخطيب</span></div>
 </header>
 
 <div class="bar">
@@ -113,7 +113,7 @@ const E=[
 ["🌍","الهوية والتنوع العالمي",["نعتز بهويتنا ولا نتخلى عن لغتنا.","نتعلم لغات أخرى لنتواصل مع العالم.","نحترم الثقافات والأديان الأخرى ونتعاون معها.","المواطنة العالمية: نعرّف العالم بقيمنا ونتعلم من الآخرين."],"<div class='ayah'>﴿وَقُولُوا لِلنَّاسِ حُسْنًا﴾ (البقرة: 83)</div><div class='tip'>مثال: دولة الإمارات تضم أكثر من 200 جنسية تعيش معًا باحترام.</div>"]
 ];
 els.innerHTML=E.map((e,i)=>`<details ${i<1?'open':''}><summary><b>${i+1}</b>${e[1]}</summary><span class="ic">${e[0]}</span><ul>${e[2].map(x=>'<li>'+x+'</li>').join('')}</ul>${e[3]||''}</details>`).join('');
-const N=["ليث مازن","محمد الخطيب","فارس ضياء","محمد عدنان","يامن محمد"];
+const N=["ليث مازن","محمد الخطيب"];
 roles.innerHTML='<ul>'+N.map((n,i)=>`<li><b>${n}:</b> العنصران ${i*2+1} و${i*2+2}</li>`).join('')+'</ul>';
 function tog(o){document.querySelectorAll('details').forEach(d=>d.open=o)}
 window.onbeforeprint=()=>tog(true);
